@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style.css">
+        <title>Space music page</title>
+
+    </head>
+
+    <body>
+        <audio autoplay loop>
+            <source src="space2.mp3" 
+            type="audio/mpeg"/>
+        </audio>
+        
+        <section class="showcase"> <!--showcase is a class---->
+            <header>
+                <h2 class="logo">SORTECHZ</h2>
+                <div class="toggle"></div>
+
+            </header>
+
+            <video src="video(1).mp4" muted loop autoplay></video>
+
+            <div class="overlay"></div>
+
+            <div class="text">
+            <h2>To infinity and beyond</h2>
+            <h3>Explore the Universe</h3>
+            <p><I>One, remember to look up at the stars and not down at your feet. Two, never give up work. Work gives you meaning and purpose and life is empty without it. Three, if you are lucky enough to find love, remember it is rare and don't throw it away.</I></p>
+            <a href="#">Explore</a>
+            </div>
+            <!--creating a div for social media-->
+
+            <ul class="social">
+                <li><a href="#"><img src="instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            </ul>
+
+        </section>  
+
+        <!--creating the menu-->
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">The Universe</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <!-- adding some js -->
+
+    <script>
+        const menuToggle= document.querySelector('.toggle');
+            const showcase = document.querySelector('.showcase');
+
+            menuToggle.addEventListener('click',() => {
+                menuToggle.classList.toggle('active');
+                showcase.classList.toggle('active');
+            })
+    </script>
+</body>
+ </html>
